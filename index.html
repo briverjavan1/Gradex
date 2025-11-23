@@ -1,43 +1,665 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DripDistrict Luxury Streetwear</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <header>
-        <h1>Welcome to DripDistrict</h1>
-        <nav>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#shop">Shop</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
+<html lang="en"><head>
+  <title>DripDistrict — Luxury Streetwear &amp; Kicks</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&amp;family=Montserrat:wght@600;800&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet">
+<link id="all-fonts-link-font-geist" rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700&amp;display=swap"><style id="all-fonts-style-font-geist">.font-geist { font-family: 'Geist', sans-serif !important; }</style><link id="all-fonts-link-font-roboto" rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600;700&amp;display=swap"><style id="all-fonts-style-font-roboto">.font-roboto { font-family: 'Roboto', sans-serif !important; }</style><link id="all-fonts-link-font-montserrat" rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&amp;display=swap"><style id="all-fonts-style-font-montserrat">.font-montserrat { font-family: 'Montserrat', sans-serif !important; }</style><link id="all-fonts-link-font-poppins" rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&amp;display=swap"><style id="all-fonts-style-font-poppins">.font-poppins { font-family: 'Poppins', sans-serif !important; }</style><link id="all-fonts-link-font-playfair" rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;900&amp;display=swap"><style id="all-fonts-style-font-playfair">.font-playfair { font-family: 'Playfair Display', serif !important; }</style><link id="all-fonts-link-font-instrument-serif" rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Serif:wght@400;500;600;700&amp;display=swap"><style id="all-fonts-style-font-instrument-serif">.font-instrument-serif { font-family: 'Instrument Serif', serif !important; }</style><link id="all-fonts-link-font-merriweather" rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&amp;display=swap"><style id="all-fonts-style-font-merriweather">.font-merriweather { font-family: 'Merriweather', serif !important; }</style><link id="all-fonts-link-font-bricolage" rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@300;400;500;600;700&amp;display=swap"><style id="all-fonts-style-font-bricolage">.font-bricolage { font-family: 'Bricolage Grotesque', sans-serif !important; }</style><link id="all-fonts-link-font-jakarta" rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&amp;display=swap"><style id="all-fonts-style-font-jakarta">.font-jakarta { font-family: 'Plus Jakarta Sans', sans-serif !important; }</style><link id="all-fonts-link-font-manrope" rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&amp;display=swap"><style id="all-fonts-style-font-manrope">.font-manrope { font-family: 'Manrope', sans-serif !important; }</style><link id="all-fonts-link-font-space-grotesk" rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;display=swap"><style id="all-fonts-style-font-space-grotesk">.font-space-grotesk { font-family: 'Space Grotesk', sans-serif !important; }</style><link id="all-fonts-link-font-work-sans" rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600;700;800&amp;display=swap"><style id="all-fonts-style-font-work-sans">.font-work-sans { font-family: 'Work Sans', sans-serif !important; }</style><link id="all-fonts-link-font-pt-serif" rel="stylesheet" href="https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&amp;display=swap"><style id="all-fonts-style-font-pt-serif">.font-pt-serif { font-family: 'PT Serif', serif !important; }</style><link id="all-fonts-link-font-geist-mono" rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist+Mono:wght@300;400;500;600;700&amp;display=swap"><style id="all-fonts-style-font-geist-mono">.font-geist-mono { font-family: 'Geist Mono', monospace !important; }</style><link id="all-fonts-link-font-space-mono" rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&amp;display=swap"><style id="all-fonts-style-font-space-mono">.font-space-mono { font-family: 'Space Mono', monospace !important; }</style><link id="all-fonts-link-font-quicksand" rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&amp;display=swap"><style id="all-fonts-style-font-quicksand">.font-quicksand { font-family: 'Quicksand', sans-serif !important; }</style><link id="all-fonts-link-font-nunito" rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700;800&amp;display=swap"><style id="all-fonts-style-font-nunito">.font-nunito { font-family: 'Nunito', sans-serif !important; }</style></head>
+<body class="min-h-screen bg-black text-white antialiased font-[Inter]">
+  <!-- Page Wrapper -->
+  <div class="min-h-screen flex flex-col bg-gradient-to-b from-black via-neutral-950 to-black">
+    
+    <!-- NAVBAR -->
+    <header class="sticky top-0 z-40 border-b border-neutral-900/80 bg-black/80 backdrop-blur">
+      <div class="max-w-6xl mx-auto flex items-center justify-between gap-4 px-4 sm:px-6 lg:px-8 py-3">
+        <!-- Logo -->
+        <div class="flex items-center gap-2">
+          <div class="h-8 w-8 rounded-full bg-white flex items-center justify-center">
+            <span class="font-[Montserrat] text-sm tracking-[0.2em] text-black">DD</span>
+          </div>
+          <span class="font-[Bebas Neue] text-2xl tracking-tight">DRIPDISTRICT</span>
+        </div>
+
+        <!-- Desktop Nav -->
+        <nav class="hidden md:flex items-center gap-6 text-sm text-neutral-200">
+          <a href="#new" class="hover:text-neutral-50 transition-colors">New</a>
+          <a href="#sneakers" class="hover:text-neutral-50 transition-colors">Sneakers</a>
+          <a href="#clothing" class="hover:text-neutral-50 transition-colors">Clothing</a>
+          <a href="#brand" class="hover:text-neutral-50 transition-colors">Story</a>
+          <a href="#contact" class="hover:text-neutral-50 transition-colors">Contact</a>
         </nav>
+
+        <!-- Right: Search + Cart -->
+        <div class="flex items-center gap-3">
+          <button class="hidden sm:flex items-center gap-2 text-xs text-neutral-300 border border-neutral-800 rounded-full px-3 py-1.5 hover:border-neutral-500/80 hover:bg-neutral-900/60 transition">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-3.5 w-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <circle cx="11" cy="11" r="7"></circle>
+              <line x1="16.5" y1="16.5" x2="21" y2="21"></line>
+            </svg>
+            <span class="text-[0.7rem]">Search drops</span>
+          </button>
+          <button class="relative flex items-center justify-center h-9 w-9 rounded-full border border-neutral-800 hover:border-neutral-500/80 hover:bg-neutral-900/60 transition">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-4.5 w-4.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M6 6h15l-1.5 9h-12z"></path>
+              <path d="M6 6l-1-3H2"></path>
+              <circle cx="9" cy="19" r="1"></circle>
+              <circle cx="18" cy="19" r="1"></circle>
+            </svg>
+            <span class="absolute -top-1 -right-1 bg-[#E10600] text-[0.6rem] leading-none rounded-full px-1.5 py-0.5 font-medium">2</span>
+          </button>
+          <!-- Mobile Menu Icon -->
+          <button class="md:hidden flex items-center justify-center h-9 w-9 rounded-full border border-neutral-800 hover:border-neutral-500/80 hover:bg-neutral-900/60 transition">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-4.5 w-4.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <line x1="4" y1="6" x2="20" y2="6"></line>
+              <line x1="4" y1="12" x2="20" y2="12"></line>
+              <line x1="4" y1="18" x2="20" y2="18"></line>
+            </svg>
+          </button>
+        </div>
+      </div>
     </header>
-    <main>
-        <section id="hero">
-            <h2>Luxury Streetwear for You</h2>
-            <p>Explore our latest collection and elevate your style.</p>
-            <a href="#shop" class="btn">Shop Now</a>
-        </section>
-        <section id="about">
-            <h2>About Us</h2>
-            <p>DripDistrict is committed to providing the highest quality streetwear for discerning customers.</p>
-        </section>
-        <section id="shop">
-            <h2>Our Collection</h2>
-            <p>Discover our exclusive range of luxury streetwear products.</p>
-        </section>
-        <section id="contact">
-            <h2>Contact Us</h2>
-            <p>Have questions? Reach out to us!</p>
-        </section>
+
+    <!-- MAIN -->
+    <main class="flex-1">
+      <!-- HERO -->
+      <section class="relative border-b border-neutral-900/70">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-10 sm:py-16 lg:py-20 grid gap-10 lg:gap-12 lg:grid-cols-[minmax(0,1.2fr)_minmax(0,1fr)] items-center">
+          <!-- Left: Copy -->
+          <div class="space-y-6 sm:space-y-7">
+            <div class="inline-flex items-center gap-2 rounded-full border border-neutral-800 bg-black/60 px-3 py-1 text-[0.75rem] text-neutral-300">
+              <span class="h-1.5 w-1.5 rounded-full bg-[#E10600]"></span>
+              <span>AW25 Heat Drop — Limited units only</span>
+            </div>
+            <h1 class="font-[Bebas Neue] tracking-tight text-4xl sm:text-5xl lg:text-6xl leading-none">
+              STEP INTO STYLE
+            </h1>
+            <p class="text-base sm:text-lg text-neutral-300 max-w-xl">
+              Curated kicks and designer fits built for the city. Premium materials, sharp lines, and street-ready energy—no compromises.
+            </p>
+            <div class="flex flex-wrap items-center gap-3">
+              <button class="inline-flex items-center justify-center rounded-full bg-[#E10600] text-white text-sm font-medium px-6 py-2.5 shadow-[0_0_40px_rgba(225,6,0,0.35)] hover:bg-red-700 transition">
+                Shop Now
+                <svg xmlns="http://www.w3.org/2000/svg" class="ml-2 h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <path d="M5 12h14"></path>
+                  <path d="M13 6l6 6-6 6"></path>
+                </svg>
+              </button>
+              <button class="inline-flex items-center justify-center rounded-full border border-neutral-700 text-sm text-neutral-100 px-5 py-2.5 hover:border-neutral-400 hover:bg-neutral-900/60 transition">
+                Browse Collections
+              </button>
+            </div>
+            <div class="flex flex-wrap gap-6 text-xs text-neutral-400">
+              <div>
+                <div class="text-neutral-200 text-sm font-medium">Free express over $200</div>
+                <div>Same-day dispatch before 2PM</div>
+              </div>
+              <div>
+                <div class="text-neutral-200 text-sm font-medium">Verified heat only</div>
+                <div>Authenticity guaranteed</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right: Visuals -->
+          <div class="relative">
+            <div class="aspect-[4/5] sm:aspect-[3/4] rounded-3xl border border-neutral-800 bg-gradient-to-br from-neutral-900 via-black to-neutral-950 overflow-hidden flex items-center justify-center">
+              <!-- Sneaker Image Placeholder -->
+              <div class="relative w-[80%] h-[70%] max-w-sm">
+                <div class="absolute inset-0 rounded-[2rem] bg-gradient-to-tr from-[#E10600]/80 via-neutral-900 to-black blur-3xl opacity-50"></div>
+                <div class="relative h-full w-full rounded-[2rem] border border-neutral-700/60 bg-neutral-950/80 flex flex-col items-center justify-center">
+                  <div class="flex bg-gradient-to-tr from-neutral-800 via-neutral-950 to-black w-11/12 h-3/5 border-neutral-700/70 border rounded-[1.4rem] items-center justify-center">
+  <span class="text-sm text-neutral-500">Sneaker Visual Placeholder</span>
+</div>
+                  <div class="w-11/12 mt-4 flex items-center justify-between text-[0.78rem] text-neutral-300">
+                    <div>
+                      <div class="uppercase tracking-[0.18em] text-[0.7rem] text-neutral-400">Featured</div>
+                      <div class="font-medium">DD Shadow Runner</div>
+                    </div>
+                    <div class="text-right">
+                      <div class="text-neutral-400 text-[0.7rem]">From</div>
+                      <div class="text-sm font-semibold">$220</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Floating Label -->
+              <div class="absolute -left-2 top-6">
+                <div class="inline-flex items-center gap-2 rounded-full bg-neutral-950/95 border border-neutral-700/80 px-3 py-1 shadow-lg shadow-black/40">
+                  <span class="h-1.5 w-1.5 rounded-full bg-[#D4A017]"></span>
+                  <span class="text-[0.7rem] text-neutral-200">Trending #1 in Streetwear</span>
+                </div>
+              </div>
+
+              <!-- Floating Stats -->
+              <div class="absolute -right-2 bottom-6">
+                <div class="rounded-2xl bg-neutral-950/95 border border-neutral-700/80 px-3 py-2.5 shadow-lg shadow-black/50">
+                  <div class="text-[0.7rem] text-neutral-400">Live Views</div>
+                  <div class="flex items-end gap-1">
+                    <span class="text-lg font-semibold tracking-tight">1,284</span>
+                    <span class="text-[0.7rem] text-[#E10600]">+38%</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- FEATURED PRODUCTS -->
+      <section id="new" class="border-b border-neutral-900/70">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-10 sm:py-14">
+          <div class="flex flex-wrap items-end justify-between gap-4 mb-6 sm:mb-8">
+            <div>
+              <h2 class="font-[Bebas Neue] tracking-tight text-2xl sm:text-3xl leading-none">FEATURED HEAT</h2>
+              <p class="text-base text-neutral-300 mt-1">Bestselling kicks &amp; latest designer fits from DripDistrict Studio.</p>
+            </div>
+            <button class="text-xs text-neutral-300 border border-neutral-800 rounded-full px-3 py-1.5 hover:border-neutral-500/80 hover:bg-neutral-900/60 transition">
+              View all drops
+            </button>
+          </div>
+
+          <div class="grid gap-5 sm:gap-6 grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+            <!-- Product Card -->
+            <article class="group rounded-2xl border border-neutral-800 bg-neutral-950/60 overflow-hidden flex flex-col hover:border-neutral-500/80 transition">
+              <div class="relative aspect-[4/5] overflow-hidden bg-gradient-to-br from-neutral-900 via-black to-neutral-950">
+                <div class="absolute inset-0 flex items-center justify-center">
+                  <span class="text-xs text-neutral-500">Sneaker Image</span>
+                </div>
+                <div class="absolute left-2 top-2 rounded-full bg-black/80 border border-neutral-700/80 text-[0.7rem] px-2 py-0.5 text-[#E10600]">
+                  New
+                </div>
+              </div>
+              <div class="p-3 sm:p-4 flex-1 flex flex-col">
+                <div class="flex items-start justify-between gap-2">
+                  <h3 class="text-sm font-medium text-neutral-50">DD Shadow Runner "Infrared"</h3>
+                  <span class="text-sm font-semibold text-neutral-100">$220</span>
+                </div>
+                <p class="mt-1 text-xs text-neutral-400">Premium leather upper, reflective piping, street-ready sole.</p>
+                <div class="mt-3 flex items-center justify-between text-[0.7rem] text-neutral-400">
+                  <span>Sizes 7–13</span>
+                  <span class="flex items-center gap-1">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3 text-[#D4A017]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                      <polygon points="12 2 15 8.5 22 9.3 17 14.1 18.3 21 12 17.8 5.7 21 7 14.1 2 9.3 9 8.5 12 2"></polygon>
+                    </svg>
+                    4.9 (128)
+                  </span>
+                </div>
+              </div>
+            </article>
+
+            <!-- Product Card -->
+            <article class="group rounded-2xl border border-neutral-800 bg-neutral-950/60 overflow-hidden flex flex-col hover:border-neutral-500/80 transition">
+              <div class="relative aspect-[4/5] overflow-hidden bg-gradient-to-br from-neutral-900 via-black to-neutral-950">
+                <div class="absolute inset-0 flex items-center justify-center">
+                  <span class="text-xs text-neutral-500">Hoodie Image</span>
+                </div>
+                <div class="absolute left-2 top-2 rounded-full bg-black/80 border border-neutral-700/80 text-[0.7rem] px-2 py-0.5 text-[#D4A017]">
+                  Bestseller
+                </div>
+              </div>
+              <div class="p-3 sm:p-4 flex-1 flex flex-col">
+                <div class="flex items-start justify-between gap-2">
+                  <h3 class="text-sm font-medium text-neutral-50">City Grid Oversized Hoodie</h3>
+                  <span class="text-sm font-semibold text-neutral-100">$160</span>
+                </div>
+                <p class="mt-1 text-xs text-neutral-400">Heavyweight fleece with tonal grid print &amp; 3D rubber logo.</p>
+                <div class="mt-3 flex items-center justify-between text-[0.7rem] text-neutral-400">
+                  <span>Sizes XS–XXL</span>
+                  <span>4 colors</span>
+                </div>
+              </div>
+            </article>
+
+            <!-- Product Card -->
+            <article class="group rounded-2xl border border-neutral-800 bg-neutral-950/60 overflow-hidden flex flex-col hover:border-neutral-500/80 transition">
+              <div class="relative aspect-[4/5] overflow-hidden bg-gradient-to-br from-neutral-900 via-black to-neutral-950">
+                <div class="absolute inset-0 flex items-center justify-center">
+                  <span class="text-xs text-neutral-500">Jacket Image</span>
+                </div>
+              </div>
+              <div class="p-3 sm:p-4 flex-1 flex flex-col">
+                <div class="flex items-start justify-between gap-2">
+                  <h3 class="text-sm font-medium text-neutral-50">Midnight Technical Bomber</h3>
+                  <span class="text-sm font-semibold text-neutral-100">$280</span>
+                </div>
+                <p class="mt-1 text-xs text-neutral-400">Water-repellent shell, matte zips, and insulated lining.</p>
+                <div class="mt-3 flex items-center justify-between text-[0.7rem] text-neutral-400">
+                  <span>Limited run</span>
+                  <span>Only 54 left</span>
+                </div>
+              </div>
+            </article>
+
+            <!-- Product Card -->
+            <article class="group rounded-2xl border border-neutral-800 bg-neutral-950/60 overflow-hidden flex flex-col hover:border-neutral-500/80 transition">
+              <div class="relative aspect-[4/5] overflow-hidden bg-gradient-to-br from-neutral-900 via-black to-neutral-950">
+                <div class="absolute inset-0 flex items-center justify-center">
+                  <span class="text-xs text-neutral-500">Accessory Image</span>
+                </div>
+              </div>
+              <div class="p-3 sm:p-4 flex-1 flex flex-col">
+                <div class="flex items-start justify-between gap-2">
+                  <h3 class="text-sm font-medium text-neutral-50">DripDistrict Signature Cap</h3>
+                  <span class="text-sm font-semibold text-neutral-100">$60</span>
+                </div>
+                <p class="mt-1 text-xs text-neutral-400">Structured crown with raised logo and satin underbrim.</p>
+                <div class="mt-3 flex items-center justify-between text-[0.7rem] text-neutral-400">
+                  <span>One size</span>
+                  <span>Adjustable strap</span>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- CATEGORIES -->
+      <section class="border-b border-neutral-900/70">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-9 sm:py-12">
+          <div class="flex flex-wrap items-end justify-between gap-4 mb-6">
+            <div>
+              <h2 class="font-[Bebas Neue] tracking-tight text-2xl sm:text-3xl leading-none">SHOP BY CATEGORY</h2>
+              <p class="text-base text-neutral-300 mt-1">Lock in your fit from the ground up.</p>
+            </div>
+          </div>
+
+          <div class="grid gap-4 sm:gap-5 md:grid-cols-3 lg:grid-cols-5">
+            <!-- Category -->
+            <a id="sneakers" href="#" class="group relative overflow-hidden rounded-2xl border border-neutral-800 bg-neutral-950/60 hover:border-neutral-500/80 transition">
+              <div class="aspect-[4/3] bg-gradient-to-br from-neutral-900 via-black to-neutral-950 flex items-center justify-center">
+                <span class="text-xs text-neutral-500">Sneaker Category Image</span>
+              </div>
+              <div class="p-3 sm:p-4 flex items-center justify-between">
+                <div>
+                  <div class="text-sm font-medium text-neutral-50">Sneakers</div>
+                  <div class="text-xs text-neutral-400">Performance &amp; lifestyle</div>
+                </div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-neutral-400 group-hover:text-[#E10600] transition" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <path d="M5 12h14"></path>
+                  <path d="M13 6l6 6-6 6"></path>
+                </svg>
+              </div>
+            </a>
+
+            <!-- Category -->
+            <a id="clothing" href="#" class="group relative overflow-hidden rounded-2xl border border-neutral-800 bg-neutral-950/60 hover:border-neutral-500/80 transition">
+              <div class="aspect-[4/3] bg-gradient-to-br from-neutral-900 via-black to-neutral-950 flex items-center justify-center">
+                <span class="text-xs text-neutral-500">Hoodie Category Image</span>
+              </div>
+              <div class="p-3 sm:p-4 flex items-center justify-between">
+                <div>
+                  <div class="text-sm font-medium text-neutral-50">Hoodies</div>
+                  <div class="text-xs text-neutral-400">Heavyweight &amp; fleece</div>
+                </div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-neutral-400 group-hover:text-[#E10600] transition" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <path d="M5 12h14"></path>
+                  <path d="M13 6l6 6-6 6"></path>
+                </svg>
+              </div>
+            </a>
+
+            <!-- Category -->
+            <a href="#" class="group relative overflow-hidden rounded-2xl border border-neutral-800 bg-neutral-950/60 hover:border-neutral-500/80 transition">
+              <div class="aspect-[4/3] bg-gradient-to-br from-neutral-900 via-black to-neutral-950 flex items-center justify-center">
+                <span class="text-xs text-neutral-500">Tees Category Image</span>
+              </div>
+              <div class="p-3 sm:p-4 flex items-center justify-between">
+                <div>
+                  <div class="text-sm font-medium text-neutral-50">Tees</div>
+                  <div class="text-xs text-neutral-400">Graphic &amp; basics</div>
+                </div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-neutral-400 group-hover:text-[#E10600] transition" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <path d="M5 12h14"></path>
+                  <path d="M13 6l6 6-6 6"></path>
+                </svg>
+              </div>
+            </a>
+
+            <!-- Category -->
+            <a href="#" class="group relative overflow-hidden rounded-2xl border border-neutral-800 bg-neutral-950/60 hover:border-neutral-500/80 transition">
+              <div class="aspect-[4/3] bg-gradient-to-br from-neutral-900 via-black to-neutral-950 flex items-center justify-center">
+                <span class="text-xs text-neutral-500">Jackets Category Image</span>
+              </div>
+              <div class="p-3 sm:p-4 flex items-center justify-between">
+                <div>
+                  <div class="text-sm font-medium text-neutral-50">Jackets</div>
+                  <div class="text-xs text-neutral-400">Shells &amp; bombers</div>
+                </div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-neutral-400 group-hover:text-[#E10600] transition" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <path d="M5 12h14"></path>
+                  <path d="M13 6l6 6-6 6"></path>
+                </svg>
+              </div>
+            </a>
+
+            <!-- Category -->
+            <a href="#" class="group relative overflow-hidden rounded-2xl border border-neutral-800 bg-neutral-950/60 hover:border-neutral-500/80 transition">
+              <div class="aspect-[4/3] bg-gradient-to-br from-neutral-900 via-black to-neutral-950 flex items-center justify-center">
+                <span class="text-xs text-neutral-500">Accessories Category Image</span>
+              </div>
+              <div class="p-3 sm:p-4 flex items-center justify-between">
+                <div>
+                  <div class="text-sm font-medium text-neutral-50">Accessories</div>
+                  <div class="text-xs text-neutral-400">Caps, bags &amp; more</div>
+                </div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-neutral-400 group-hover:text-[#E10600] transition" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <path d="M5 12h14"></path>
+                  <path d="M13 6l6 6-6 6"></path>
+                </svg>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- PRODUCT PAGE PREVIEW -->
+      <section class="border-b border-neutral-900/70 bg-gradient-to-b from-black via-neutral-950 to-black">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-10 sm:py-14">
+          <div class="flex flex-wrap items-end justify-between gap-4 mb-6">
+            <div>
+              <h2 class="font-[Bebas Neue] tracking-tight text-2xl sm:text-3xl leading-none">PRODUCT PAGE PREVIEW</h2>
+              <p class="text-base text-neutral-300 mt-1">Clean layout, clear sizing, and fast add-to-cart.</p>
+            </div>
+          </div>
+
+          <div class="grid gap-8 lg:grid-cols-2 items-start">
+            <!-- Product Gallery -->
+            <div class="space-y-4">
+              <div class="aspect-[4/5] rounded-2xl border border-neutral-800 bg-gradient-to-br from-neutral-900 via-black to-neutral-950 flex items-center justify-center">
+                <span class="text-xs text-neutral-500">Primary Product Image</span>
+              </div>
+              <div class="grid grid-cols-4 gap-2">
+                <div class="aspect-square rounded-xl border-2 border-[#E10600] bg-neutral-900 flex items-center justify-center text-[0.7rem] text-neutral-400">View 1</div>
+                <div class="aspect-square rounded-xl border border-neutral-800 bg-neutral-950 flex items-center justify-center text-[0.7rem] text-neutral-500">View 2</div>
+                <div class="aspect-square rounded-xl border border-neutral-800 bg-neutral-950 flex items-center justify-center text-[0.7rem] text-neutral-500">View 3</div>
+                <div class="aspect-square rounded-xl border border-neutral-800 bg-neutral-950 flex items-center justify-center text-[0.7rem] text-neutral-500">On-foot</div>
+              </div>
+            </div>
+
+            <!-- Product Info -->
+            <div class="space-y-5">
+              <div class="flex items-start justify-between gap-3">
+                <div>
+                  <div class="uppercase text-[0.7rem] tracking-[0.18em] text-neutral-400">Kicks · Drop 07</div>
+                  <h3 class="mt-1 font-[Montserrat] font-semibold tracking-tight text-2xl sm:text-3xl">DD Shadow Runner "Infrared Circuit"</h3>
+                </div>
+                <div class="text-right">
+                  <div class="text-sm text-neutral-400 line-through">$260</div>
+                  <div class="text-xl font-semibold">$220</div>
+                  <div class="text-[0.7rem] text-[#D4A017] mt-0.5">Limited release</div>
+                </div>
+              </div>
+
+              <p class="text-base text-neutral-300">
+                Engineered mesh, premium leather overlays, and a sculpted sole unit tuned for all-day city wear. Subtle infrared hits and reflective detailing keep you seen after dark.
+              </p>
+
+              <!-- Rating + Meta -->
+              <div class="flex flex-wrap items-center gap-4 text-xs text-neutral-400">
+                <div class="flex items-center gap-1.5">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-3.5 w-3.5 text-[#D4A017]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                    <polygon points="12 2 15 8.5 22 9.3 17 14.1 18.3 21 12 17.8 5.7 21 7 14.1 2 9.3 9 8.5 12 2"></polygon>
+                  </svg>
+                  <span>4.9 • 128 reviews</span>
+                </div>
+                <span>Fit: True to size</span>
+                <span>Shipping: 1–3 days</span>
+              </div>
+
+              <!-- Sizes -->
+              <div class="space-y-2">
+                <div class="flex items-center justify-between text-xs">
+                  <span class="text-neutral-200">Select size (US)</span>
+                  <button class="text-neutral-400 hover:text-neutral-200 transition">Size guide</button>
+                </div>
+                <div class="grid grid-cols-6 gap-2 text-xs">
+                  <button class="h-9 rounded-full border border-[#E10600] bg-[#E10600]/10 text-neutral-50 font-medium">7</button>
+                  <button class="h-9 rounded-full border border-neutral-700 hover:border-neutral-400 hover:bg-neutral-900/60 transition">8</button>
+                  <button class="h-9 rounded-full border border-neutral-700 hover:border-neutral-400 hover:bg-neutral-900/60 transition">9</button>
+                  <button class="h-9 rounded-full border border-neutral-700 hover:border-neutral-400 hover:bg-neutral-900/60 transition">10</button>
+                  <button class="h-9 rounded-full border border-neutral-700 hover:border-neutral-400 hover:bg-neutral-900/60 transition">11</button>
+                  <button class="h-9 rounded-full border-dashed border-neutral-800 text-neutral-500 line-through cursor-not-allowed">12</button>
+                </div>
+              </div>
+
+              <!-- CTA -->
+              <div class="space-y-2">
+                <button class="w-full inline-flex items-center justify-center rounded-full bg-[#E10600] text-white text-sm font-medium px-5 py-2.5 shadow-[0_0_40px_rgba(225,6,0,0.35)] hover:bg-red-700 transition">
+                  Add to Cart
+                  <svg xmlns="http://www.w3.org/2000/svg" class="ml-2 h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                    <path d="M6 6h15l-1.5 9h-12z"></path>
+                    <path d="M6 6l-1-3H2"></path>
+                  </svg>
+                </button>
+                <button class="w-full inline-flex items-center justify-center rounded-full border border-neutral-700 text-sm text-neutral-100 px-5 py-2.5 hover:border-neutral-400 hover:bg-neutral-900/60 transition">
+                  Add to Wishlist
+                </button>
+              </div>
+
+              <!-- Related Items -->
+              <div class="pt-4 border-t border-neutral-900/80 space-y-3">
+                <div class="flex items-center justify-between">
+                  <span class="text-xs text-neutral-300">Related items</span>
+                  <button class="text-[0.7rem] text-neutral-400 hover:text-neutral-200 transition">View all</button>
+                </div>
+                <div class="grid grid-cols-3 gap-3 text-[0.7rem]">
+                  <div class="rounded-xl border border-neutral-800 bg-neutral-950/70 p-2">
+                    <div class="aspect-square rounded-lg bg-neutral-900 flex items-center justify-center text-[0.64rem] text-neutral-500">Hoodie</div>
+                    <div class="mt-1 text-neutral-200 truncate">City Grid Hoodie</div>
+                    <div class="text-neutral-400">$160</div>
+                  </div>
+                  <div class="rounded-xl border border-neutral-800 bg-neutral-950/70 p-2">
+                    <div class="aspect-square rounded-lg bg-neutral-900 flex items-center justify-center text-[0.64rem] text-neutral-500">Pant</div>
+                    <div class="mt-1 text-neutral-200 truncate">Tech Track Pant</div>
+                    <div class="text-neutral-400">$140</div>
+                  </div>
+                  <div class="rounded-xl border border-neutral-800 bg-neutral-950/70 p-2">
+                    <div class="aspect-square rounded-lg bg-neutral-900 flex items-center justify-center text-[0.64rem] text-neutral-500">Cap</div>
+                    <div class="mt-1 text-neutral-200 truncate">Signature Cap</div>
+                    <div class="text-neutral-400">$60</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- BRAND STORY -->
+      <section id="brand" class="border-b border-neutral-900/70">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-10 sm:py-14">
+          <div class="grid gap-8 lg:grid-cols-[minmax(0,1.1fr)_minmax(0,1.1fr)] items-center">
+            <div class="space-y-4">
+              <div class="uppercase text-[0.7rem] tracking-[0.18em] text-[#E10600]">Brand Story</div>
+              <h2 class="font-[Bebas Neue] tracking-tight text-2xl sm:text-3xl leading-none">BUILT FOR THE CITY, DESIGNED FOR THE CULTURE</h2>
+              <p class="text-base text-neutral-300">
+                DripDistrict was born from late-night sessions and city lights. We blend luxury craftsmanship with the raw energy of the streets—premium fabrics,
+                sharp silhouettes, and details that only real heads notice.
+              </p>
+              <p class="text-base text-neutral-300">
+                Every drop is produced in tight runs, ethically made with handpicked partners. No logo overkill, no loud tags—just quiet confidence and quality you can feel.
+              </p>
+              <div class="flex flex-wrap gap-4 text-xs text-neutral-300">
+                <div class="rounded-full border border-neutral-700 bg-neutral-950/80 px-3 py-1.5">Ethically produced</div>
+                <div class="rounded-full border border-neutral-700 bg-neutral-950/80 px-3 py-1.5">Premium, long-wear fabrics</div>
+                <div class="rounded-full border border-neutral-700 bg-neutral-950/80 px-3 py-1.5">Limited edition drops</div>
+              </div>
+            </div>
+
+            <div class="relative">
+              <div class="aspect-[4/5] rounded-3xl border border-neutral-800 bg-gradient-to-br from-neutral-900 via-black to-neutral-950 overflow-hidden">
+                <div class="absolute inset-0 flex items-center justify-center">
+                  <span class="text-xs text-neutral-500">Lifestyle / Brand Story Image</span>
+                </div>
+              </div>
+              <div class="absolute -bottom-4 -left-4 w-36 sm:w-44 rounded-2xl border border-neutral-800 bg-black/90 backdrop-blur p-3 shadow-lg shadow-black/40">
+                <div class="text-[0.7rem] text-neutral-400">Since</div>
+                <div class="text-lg font-semibold tracking-tight text-neutral-50 leading-none mt-0.5">2019</div>
+                <div class="text-[0.7rem] text-neutral-400 mt-2">Designed in</div>
+                <div class="text-sm text-neutral-100">NY / LA / Berlin</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- TESTIMONIALS + REVIEWS -->
+      <section class="border-b border-neutral-900/70 bg-neutral-950/60">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-10 sm:py-14">
+          <div class="flex flex-wrap items-end justify-between gap-4 mb-6 sm:mb-8">
+            <div>
+              <h2 class="font-[Bebas Neue] tracking-tight text-2xl sm:text-3xl leading-none">WHAT THE CREW IS SAYING</h2>
+              <p class="text-base text-neutral-300 mt-1">Real reviews from verified DripDistrict customers.</p>
+            </div>
+            <div class="flex items-center gap-2 text-xs text-neutral-300">
+              <div class="flex items-center gap-1.5">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-3.5 w-3.5 text-[#D4A017]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <polygon points="12 2 15 8.5 22 9.3 17 14.1 18.3 21 12 17.8 5.7 21 7 14.1 2 9.3 9 8.5 12 2"></polygon>
+                </svg>
+                <span>4.8 average</span>
+              </div>
+              <span class="text-neutral-500">·</span>
+              <span>1,200+ reviews</span>
+            </div>
+          </div>
+
+          <div class="grid gap-4 sm:gap-5 md:grid-cols-3">
+            <!-- Testimonial Card -->
+            <article class="rounded-2xl border border-neutral-800 bg-black/80 p-4 sm:p-5 flex flex-col justify-between hover:border-neutral-500/80 transition">
+              <div class="flex items-center gap-2 mb-3">
+                <div class="h-8 w-8 rounded-full bg-neutral-900 flex items-center justify-center text-[0.7rem] text-neutral-300">AL</div>
+                <div>
+                  <div class="text-xs text-neutral-100">Alex, NYC</div>
+                  <div class="flex items-center gap-0.5 text-[0.7rem] text-[#D4A017]">
+                    <span>★★★★★</span>
+                  </div>
+                </div>
+              </div>
+              <p class="text-base text-neutral-200">
+                "The Shadow Runners are crazy comfortable. Materials feel premium, and the details hit different in person."
+              </p>
+              <div class="mt-3 text-[0.7rem] text-neutral-400">Purchased: DD Shadow Runner "Infrared Circuit"</div>
+            </article>
+
+            <!-- Testimonial Card -->
+            <article class="rounded-2xl border border-neutral-800 bg-black/80 p-4 sm:p-5 flex flex-col justify-between hover:border-neutral-500/80 transition">
+              <div class="flex items-center gap-2 mb-3">
+                <div class="h-8 w-8 rounded-full bg-neutral-900 flex items-center justify-center text-[0.7rem] text-neutral-300">MJ</div>
+                <div>
+                  <div class="text-xs text-neutral-100">Maya, LA</div>
+                  <div class="flex items-center gap-0.5 text-[0.7rem] text-[#D4A017]">
+                    <span>★★★★★</span>
+                  </div>
+                </div>
+              </div>
+              <p class="text-base text-neutral-200">
+                "Hoodie is heavyweight but still drapes perfectly. Washed it a few times and it still looks brand new."
+              </p>
+              <div class="mt-3 text-[0.7rem] text-neutral-400">Purchased: City Grid Oversized Hoodie</div>
+            </article>
+
+            <!-- Testimonial Card -->
+            <article class="rounded-2xl border border-neutral-800 bg-black/80 p-4 sm:p-5 flex flex-col justify-between hover:border-neutral-500/80 transition">
+              <div class="flex items-center gap-2 mb-3">
+                <div class="h-8 w-8 rounded-full bg-neutral-900 flex items-center justify-center text-[0.7rem] text-neutral-300">RS</div>
+                <div>
+                  <div class="text-xs text-neutral-100">Rico, Berlin</div>
+                  <div class="flex items-center gap-0.5 text-[0.7rem] text-[#D4A017]">
+                    <span>★★★★☆</span>
+                  </div>
+                </div>
+              </div>
+              <p class="text-base text-neutral-200">
+                "Shipping was fast and packaging felt super premium. Jackets are built for real weather, not just the gram."
+              </p>
+              <div class="mt-3 text-[0.7rem] text-neutral-400">Purchased: Midnight Technical Bomber</div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- FOOTER -->
+      <footer id="contact" class="border-t border-neutral-900 bg-black">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-9 sm:py-12 space-y-8">
+          <div class="flex flex-wrap gap-8 justify-between">
+            <!-- Brand + Newsletter -->
+            <div class="space-y-4 max-w-sm">
+              <div class="flex items-center gap-2">
+                <div class="h-8 w-8 rounded-full bg-white flex items-center justify-center">
+                  <span class="font-[Montserrat] text-sm tracking-[0.2em] text-black">DD</span>
+                </div>
+                <span class="font-[Bebas Neue] text-2xl tracking-tight">DRIPDISTRICT</span>
+              </div>
+              <p class="text-base text-neutral-300">
+                Luxury streetwear engineered for real life. Stay ahead of the next drop.
+              </p>
+              <form class="flex flex-col sm:flex-row gap-2 sm:gap-3">
+                <div class="flex-1">
+                  <input type="email" placeholder="Email for early access" class="w-full rounded-full bg-neutral-950 border border-neutral-800 text-xs text-neutral-100 placeholder:text-neutral-500 px-3 py-2.5 focus:outline-none focus:border-neutral-500">
+                </div>
+                <button type="submit" class="rounded-full bg-[#E10600] text-white text-xs font-medium px-4 py-2.5 hover:bg-red-700 transition whitespace-nowrap">
+                  Join list
+                </button>
+              </form>
+            </div>
+
+            <!-- Links -->
+            <div class="grid gap-8 grid-cols-2 sm:grid-cols-3 text-xs">
+              <div class="space-y-2">
+                <div class="text-neutral-400 uppercase tracking-[0.18em] text-[0.65rem]">Support</div>
+                <ul class="space-y-1.5 text-neutral-300">
+                  <li><a href="#" class="hover:text-neutral-50 transition">Help Center</a></li>
+                  <li><a href="#" class="hover:text-neutral-50 transition">Contact</a></li>
+                  <li><a href="#" class="hover:text-neutral-50 transition">Order Tracking</a></li>
+                </ul>
+              </div>
+              <div class="space-y-2">
+                <div class="text-neutral-400 uppercase tracking-[0.18em] text-[0.65rem]">Policies</div>
+                <ul class="space-y-1.5 text-neutral-300">
+                  <li><a href="#" class="hover:text-neutral-50 transition">Return Policy</a></li>
+                  <li><a href="#" class="hover:text-neutral-50 transition">Shipping</a></li>
+                  <li><a href="#" class="hover:text-neutral-50 transition">Privacy</a></li>
+                  
+                </ul>
+              </div>
+              <div class="space-y-2">
+                <div class="text-neutral-400 uppercase tracking-[0.18em] text-[0.65rem]">FAQs</div>
+                <ul class="space-y-1.5 text-neutral-300">
+                  <li><a href="#" class="hover:text-neutral-50 transition">Sizing &amp; Fit</a></li>
+                  <li><a href="#" class="hover:text-neutral-50 transition">Care Instructions</a></li>
+                  <li><a href="#" class="hover:text-neutral-50 transition">Drops &amp; Restocks</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Social + Bottom -->
+          <div class="flex flex-wrap items-center justify-between gap-4 border-t border-neutral-900 pt-4">
+            <div class="flex items-center gap-3 text-xs text-neutral-400">
+              <span>© <span id="year">2025</span> DripDistrict Studio</span>
+              <span class="hidden sm:inline text-neutral-700">•</span>
+              <span class="hidden sm:inline">All rights reserved.</span>
+            </div>
+            <div class="flex items-center gap-3 text-xs text-neutral-300">
+              <a href="#" class="flex items-center justify-center h-7 w-7 rounded-full border border-neutral-800 hover:border-neutral-500/80 hover:bg-neutral-900/80 transition">
+                <span>IG</span>
+              </a>
+              <a href="#" class="flex items-center justify-center h-7 w-7 rounded-full border border-neutral-800 hover:border-neutral-500/80 hover:bg-neutral-900/80 transition">
+                <span>TT</span>
+              </a>
+              <a href="#" class="flex items-center justify-center h-7 w-7 rounded-full border border-neutral-800 hover:border-neutral-500/80 hover:bg-neutral-900/80 transition">
+                <span>YT</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </footer>
     </main>
-    <footer>
-        <p>&copy; 2025 DripDistrict. All rights reserved.</p>
-    </footer>
-</body>
-</html>
+  </div>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+
+</body></html>
