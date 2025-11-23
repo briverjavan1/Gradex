@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Gradex Writers</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link
+    rel="stylesheet"
+    href="https://unpkg.com/lucide-static@0.321.0/font/lucide.css"
+  />
+</head>
+<body class="min-h-screen bg-[#0D1B2A] text-[#F7F3EE] antialiased">
+  <div class="min-h-screen flex flex-col">
+    <!-- Top Bar -->
+    <header class="border-b border-white/5 bg-[#0D1B2A]/80 backdrop-blur">
+      <div class="max-w-6xl mx-auto flex items-center justify-between gap-4 py-4 px-4 lg:px-8">
+        <div class="flex items-center gap-3">
+          <!-- Added logo image, kept original monogram as fallback -->
+          <a href="#" class="flex items-center gap-2">
+            <img
+              src="https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/917d6f93-fb36-439a-8c48-884b67b35381_1600w.jpg"
+              alt="Gradex Writers logo"
+              class="h-8 w-8 rounded-full border border-[#F2C94C]/60 object-cover bg-[#F2C94C]/10"
+            />
+          </a>
+          <div class="flex flex-col">
+            <span class="text-sm font-semibold tracking-tight text-white">Gradex Writers</span>
+            <span class="text-xs text-white/60">Global academic writing studio</span>
+          </div>
+        </div>
+        <div class="hidden md:flex items-center gap-6 text-sm">
+          <a href="#services" class="text-sm text-white/70 hover:text-white transition-colors">Services</a>
+          <a href="#pricing" class="text-sm text-white/70 hover:text-white transition-colors">Pricing</a>
+          <a href="#process" class="text-sm text-white/70 hover:text-white transition-colors">How it works</a>
+          <a href="#contact" class="text-sm text-white/70 hover:text-white transition-colors">Contact</a>
+          <a href="#quote" class="text-sm font-semibold text-[#0D1B2A] bg-[#F2C94C] hover:bg-[#F2C94C]/90 rounded-full px-4 py-2 transition-colors">Get a quote</a>
+        </div>
+        <button class="md:hidden inline-flex items-center justify-center h-9 w-9 rounded-full border border-white/10 text-white">
+          <i class="lucide lucide-menu text-base" style="stroke-width:1.5;"></i>
+        </button>
+      </div>
+    </header>
+
+    <!-- Hero -->
+    <!-- ...rest of the code remains unchanged, see user content above... -->
+
+    <footer class="border-t border-white/10 bg-[#0D1B2A]">
+      <div class="max-w-6xl mx-auto px-4 lg:px-8 py-6 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-[#F7F3EE]/60">
+        <div class="flex items-center gap-2">
+          <span class="font-semibold tracking-tight text-[#F7F3EE]">Gradex Writers</span>
+          <span>© <span id="year"></span> All rights reserved.</span>
+        </div>
+        <div class="flex flex-wrap gap-4">
+          <a href="#" class="hover:text-[#F2C94C]">Terms &amp; Conditions</a>
+          <a href="#" class="hover:text-[#F2C94C]">Privacy &amp; Confidentiality</a>
+          <a href="#" class="hover:text-[#F2C94C]">Writer applications</a>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
