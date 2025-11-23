@@ -1,14 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
+<html lang="en"><head>
   <title>Gradex Writers</title>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://cdn.tailwindcss.com"></script>
-  <link
-    rel="stylesheet"
-    href="https://unpkg.com/lucide-static@0.321.0/font/lucide.css"
-  />
+  <link rel="stylesheet" href="https://unpkg.com/lucide-static@0.321.0/font/lucide.css">
 </head>
 <body class="min-h-screen bg-[#0D1B2A] text-[#F7F3EE] antialiased">
   <div class="min-h-screen flex flex-col">
@@ -18,11 +13,7 @@
         <div class="flex items-center gap-3">
           <!-- Added logo image, kept original monogram as fallback -->
           <a href="#" class="flex items-center gap-2">
-            <img
-              src="https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/917d6f93-fb36-439a-8c48-884b67b35381_1600w.jpg"
-              alt="Gradex Writers logo"
-              class="h-8 w-8 rounded-full border border-[#F2C94C]/60 object-cover bg-[#F2C94C]/10"
-            />
+            <img src="https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/917d6f93-fb36-439a-8c48-884b67b35381_1600w.jpg" alt="Gradex Writers logo" class="h-8 w-8 rounded-full border border-[#F2C94C]/60 object-cover bg-[#F2C94C]/10">
           </a>
           <div class="flex flex-col">
             <span class="text-sm font-semibold tracking-tight text-white">Gradex Writers</span>
@@ -43,26 +34,37 @@
     </header>
 
     <!-- Hero -->
-    <!-- ...rest of the code remains unchanged, see user content above... -->
+    <main class="flex-1">
+      <section class="border-b border-white/5 bg-gradient-to-b from-[#0D1B2A] to-[#0D1B2A]">
+        <div class="max-w-6xl mx-auto px-4 lg:px-8 py-10 lg:py-16 grid gap-10 lg:grid-cols-[minmax(0,1.4fr)_minmax(0,1fr)] items-center">
+          <!-- Left -->
+          <div class="space-y-6">
+            <div class="inline-flex items-center gap-2 rounded-full border border-[#F2C94C]/30 bg-[#F2C94C]/10 px-3 py-1">
+              <span class="h-1.5 w-1.5 rounded-full bg-[#F2C94C]"></span>
+              <span class="text-xs font-medium text-[#F2C94C]">Global experts, worldwide academic support</span>
+            </div>
+            <div>
+              <h1 class="text-3xl sm:text-4xl lg:text-5xl font-semibold tracking-tight text-white">
+                Professional Academic Writing &amp; Research Support for Global Students
+              </h1>
+              <p class="mt-4 text-base sm:text-lg text-[#F7F3EE]/80 max-w-2xl">
+                We help students in the US, UK, Canada, Europe, Australia and beyond handle essays, research papers, and dissertations with
+                original, well‑researched work delivered on time, every time.
+              </p>
+            </div>
 
-    <footer class="border-t border-white/10 bg-[#0D1B2A]">
-      <div class="max-w-6xl mx-auto px-4 lg:px-8 py-6 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-[#F7F3EE]/60">
-        <div class="flex items-center gap-2">
-          <span class="font-semibold tracking-tight text-[#F7F3EE]">Gradex Writers</span>
-          <span>© <span id="year"></span> All rights reserved.</span>
-        </div>
-        <div class="flex flex-wrap gap-4">
-          <a href="#" class="hover:text-[#F2C94C]">Terms &amp; Conditions</a>
-          <a href="#" class="hover:text-[#F2C94C]">Privacy &amp; Confidentiality</a>
-          <a href="#" class="hover:text-[#F2C94C]">Writer applications</a>
-        </div>
-      </div>
-    </footer>
-  </div>
+            <div class="flex flex-wrap items-center gap-3">
+              <a href="#quote" class="inline-flex items-center justify-center rounded-full bg-[#F2C94C] text-[#0D1B2A] text-sm font-semibold px-5 py-2.5 hover:bg-[#F2C94C]/90 transition-colors">
+                Get a free quote
+                <i class="lucide lucide-arrow-right ml-2 text-sm" style="stroke-width:1.5;"></i>
+              </a>
+              <a href="#contact" class="inline-flex items-center justify-center rounded-full border border-white/20 text-sm text-white px-5 py-2.5 hover:bg-white/5 transition-colors">
+                Chat on WhatsApp
+                <i class="lucide lucide-message-circle ml-2 text-sm" style="stroke-width:1.5;"></i>
+              </a>
+            </div>
 
-  <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
-  </script>
+            <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 text-xs sm:text-sm text-[#F7F3EE]/70">
               <div>
                 <div class="text-base font-semibold text-white">100% Original</div>
                 <p class="mt-1">Custom work, checked for plagiarism.</p>
