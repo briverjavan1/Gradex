@@ -61,7 +61,23 @@
     }
     .btn.primary { background: var(--gold); color: #111827; }
     .btn.primary:hover { filter: brightness(1.05); }
-    .btn.whatsapp { background: var(--accent); color: #062f1b; }
+    .btn.whatsapp {
+      background: #25D366;
+      color: #fff;
+      padding: 8px 12px;
+      font-size: 15px;
+      border-radius: 10px;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      border: none;
+    }
+    .btn.whatsapp svg {
+      width: 18px;
+      height: 18px;
+      vertical-align: middle;
+      margin-right: 2px;
+    }
     .btn.outline { background: transparent; color: var(--gold); border: 1px solid var(--gold); }
     .hero-card {
       background: linear-gradient(180deg, #121a3e, #0f1735);
@@ -134,8 +150,9 @@
     /* Floating WhatsApp */
     .floating-wa {
       position: fixed; right: 18px; bottom: 18px; z-index: 90;
-      display: inline-flex; align-items: center; gap: 8px; background: var(--accent); color: #062f1b;
-      padding: 12px 16px; border-radius: 16px; font-weight: 800; box-shadow: 0 10px 30px rgba(34,197,94,0.35);
+      display: inline-flex; align-items: center; gap: 8px; background: #25D366; color: #fff;
+      padding: 8px 12px; border-radius: 12px; font-size: 15px;
+      box-shadow: 0 10px 30px rgba(34,197,94,0.35);
     }
 
     /* SVG logo sizing */
@@ -216,14 +233,80 @@
       <h2>Featured products</h2>
       <p>Tap Order to place an instant WhatsApp order. We’ll confirm availability and delivery in Juja, Kiambu and beyond.</p>
       <div class="products-grid">
-        <!-- Product 1 -->
-        <article class="product" data-name="MK7 Classic High-Top" data-price="KSh 5,500">
+        <!-- Nike Air Force 1 -->
+        <article class="product" data-name="Nike Air Force 1" data-price="KSh 8,500">
           <div class="product-media">
-            <img src="https://images.unsplash.com/photo-1519741497674-611f83f111c3?q=80&w=1200&auto=format&fit=crop" alt="Classic high-top sneakers">
-            <span class="product-badge">New</span>
+            <img src="https://images.unsplash.com/photo-1517263904808-5dc0d6a3b4e6?q=80&w=1200&auto=format&fit=crop" alt="Nike Air Force 1">
+            <span class="product-badge">All sizes available</span>
           </div>
           <div class="product-body">
-            <div class="product-name">MK7 Classic High-Top</div>
+            <div class="product-name">Nike Air Force 1</div>
+            <div class="product-meta">
+              <span class="price">KSh 8,500</span>
+              <span class="stock">In stock</span>
+            </div>
+            <div class="product-actions">
+              <button class="action order">Order</button>
+              <a class="action view" href="#contact">Ask about sizes</a>
+              <a class="action whatsapp" target="_blank" rel="noopener" href="https://wa.me/254769551694?text=Hi%20MK7%2C%20I%20want%20Nike%20Air%20Force%201%20(%20KSh%208500%20)%20—%20Size%3A%20%5B%5D%20Quantity%3A%201.">
+                <svg viewBox="0 0 32 32"><path fill="#fff" d="M16 3C9.373 3 4 8.373 4 15c0 2.637.86 5.09 2.48 7.16L4 29l7.09-2.32A12.97 12.97 0 0 0 16 27c6.627 0 12-5.373 12-12S22.627 3 16 3zm0 22c-1.98 0-3.91-.52-5.6-1.51l-.4-.23-4.2 1.37 1.37-4.2-.23-.4A9.97 9.97 0 0 1 6 15c0-5.514 4.486-10 10-10s10 4.486 10 10-4.486 10-10 10zm5.07-7.13c-.28-.14-1.65-.81-1.9-.9-.25-.09-.43-.14-.61.14-.18.28-.7.9-.86 1.08-.16.18-.32.2-.6.07-.28-.14-1.18-.44-2.25-1.4-.83-.74-1.39-1.65-1.55-1.93-.16-.28-.02-.43.12-.57.13-.13.28-.34.42-.51.14-.17.18-.29.28-.48.09-.19.05-.36-.02-.5-.07-.14-.61-1.47-.84-2.01-.22-.54-.45-.47-.61-.48-.16-.01-.36-.01-.56-.01-.19 0-.5.07-.76.36-.26.29-1 1-.97 2.43.03 1.43 1.04 2.81 1.19 3.01.15.2 2.05 3.14 5.01 4.28.7.24 1.25.38 1.68.49.71.18 1.36.15 1.87.09.57-.07 1.65-.67 1.89-1.32.23-.65.23-1.21.16-1.32-.07-.11-.25-.18-.53-.32z"/></svg>
+                WhatsApp
+              </a>
+            </div>
+          </div>
+        </article>
+        <!-- Adidas Superstar -->
+        <article class="product" data-name="Adidas Superstar" data-price="KSh 7,200">
+          <div class="product-media">
+            <img src="https://images.unsplash.com/photo-1465101046530-73398c7f28ca?q=80&w=1200&auto=format&fit=crop" alt="Adidas Superstar">
+            <span class="product-badge">All sizes available</span>
+          </div>
+          <div class="product-body">
+            <div class="product-name">Adidas Superstar</div>
+            <div class="product-meta">
+              <span class="price">KSh 7,200</span>
+              <span class="stock">In stock</span>
+            </div>
+            <div class="product-actions">
+              <button class="action order">Order</button>
+              <a class="action view" href="#contact">Ask about sizes</a>
+              <a class="action whatsapp" target="_blank" rel="noopener" href="https://wa.me/254769551694?text=Hi%20MK7%2C%20I%20want%20Adidas%20Superstar%20(%20KSh%207200%20)%20—%20Size%3A%20%5B%5D%20Quantity%3A%201.">
+                <svg viewBox="0 0 32 32"><path fill="#fff" d="M16 3C9.373 3 4 8.373 4 15c0 2.637.86 5.09 2.48 7.16L4 29l7.09-2.32A12.97 12.97 0 0 0 16 27c6.627 0 12-5.373 12-12S22.627 3 16 3zm0 22c-1.98 0-3.91-.52-5.6-1.51l-.4-.23-4.2 1.37 1.37-4.2-.23-.4A9.97 9.97 0 0 1 6 15c0-5.514 4.486-10 10-10s10 4.486 10 10-4.486 10-10 10zm5.07-7.13c-.28-.14-1.65-.81-1.9-.9-.25-.09-.43-.14-.61.14-.18.28-.7.9-.86 1.08-.16.18-.32.2-.6.07-.28-.14-1.18-.44-2.25-1.4-.83-.74-1.39-1.65-1.55-1.93-.16-.28-.02-.43.12-.57.13-.13.28-.34.42-.51.14-.17.18-.29.28-.48.09-.19.05-.36-.02-.5-.07-.14-.61-1.47-.84-2.01-.22-.54-.45-.47-.61-.48-.16-.01-.36-.01-.56-.01-.19 0-.5.07-.76.36-.26.29-1 1-.97 2.43.03 1.43 1.04 2.81 1.19 3.01.15.2 2.05 3.14 5.01 4.28.7.24 1.25.38 1.68.49.71.18 1.36.15 1.87.09.57-.07 1.65-.67 1.89-1.32.23-.65.23-1.21.16-1.32-.07-.11-.25-.18-.53-.32z"/></svg>
+                WhatsApp
+              </a>
+            </div>
+          </div>
+        </article>
+        <!-- Converse Chuck Taylor -->
+        <article class="product" data-name="Converse Chuck Taylor" data-price="KSh 6,000">
+          <div class="product-media">
+            <img src="https://images.unsplash.com/photo-1519864600265-abb23847ef2c?q=80&w=1200&auto=format&fit=crop" alt="Converse Chuck Taylor">
+            <span class="product-badge">All sizes available</span>
+          </div>
+          <div class="product-body">
+            <div class="product-name">Converse Chuck Taylor</div>
+            <div class="product-meta">
+              <span class="price">KSh 6,000</span>
+              <span class="stock">In stock</span>
+            </div>
+            <div class="product-actions">
+              <button class="action order">Order</button>
+              <a class="action view" href="#contact">Ask about sizes</a>
+              <a class="action whatsapp" target="_blank" rel="noopener" href="https://wa.me/254769551694?text=Hi%20MK7%2C%20I%20want%20Converse%20Chuck%20Taylor%20(%20KSh%206000%20)%20—%20Size%3A%20%5B%5D%20Quantity%3A%201.">
+                <svg viewBox="0 0 32 32"><path fill="#fff" d="M16 3C9.373 3 4 8.373 4 15c0 2.637.86 5.09 2.48 7.16L4 29l7.09-2.32A12.97 12.97 0 0 0 16 27c6.627 0 12-5.373 12-12S22.627 3 16 3zm0 22c-1.98 0-3.91-.52-5.6-1.51l-.4-.23-4.2 1.37 1.37-4.2-.23-.4A9.97 9.97 0 0 1 6 15c0-5.514 4.486-10 10-10s10 4.486 10 10-4.486 10-10 10zm5.07-7.13c-.28-.14-1.65-.81-1.9-.9-.25-.09-.43-.14-.61.14-.18.28-.7.9-.86 1.08-.16.18-.32.2-.6.07-.28-.14-1.18-.44-2.25-1.4-.83-.74-1.39-1.65-1.55-1.93-.16-.28-.02-.43.12-.57.13-.13.28-.34.42-.51.14-.17.18-.29.28-.48.09-.19.05-.36-.02-.5-.07-.14-.61-1.47-.84-2.01-.22-.54-.45-.47-.61-.48-.16-.01-.36-.01-.56-.01-.19 0-.5.07-.76.36-.26.29-1 1-.97 2.43.03 1.43 1.04 2.81 1.19 3.01.15.2 2.05 3.14 5.01 4.28.7.24 1.25.38 1.68.49.71.18 1.36.15 1.87.09.57-.07 1.65-.67 1.89-1.32.23-.65.23-1.21.16-1.32-.07-.11-.25-.18-.53-.32z"/></svg>
+                WhatsApp
+              </a>
+            </div>
+          </div>
+        </article>
+        <!-- Zara Black Dress -->
+        <article class="product" data-name="Zara Black Dress" data-price="KSh 5,500">
+          <div class="product-media">
+            <img src="https://images.unsplash.com/photo-1512436991641-6745cdb1723f?q=80&w=1200&auto=format&fit=crop" alt="Zara Black Dress on black model">
+            <span class="product-badge">All sizes available</span>
+          </div>
+          <div class="product-body">
+            <div class="product-name">Zara Black Dress</div>
             <div class="product-meta">
               <span class="price">KSh 5,500</span>
               <span class="stock">In stock</span>
@@ -231,67 +314,32 @@
             <div class="product-actions">
               <button class="action order">Order</button>
               <a class="action view" href="#contact">Ask about sizes</a>
-              <a class="action whatsapp" target="_blank" rel="noopener" href="https://wa.me/254769551694?text=Hi%20MK7%2C%20I%20want%20MK7%20Classic%20High-Top%20(%20KSh%205500%20)%20—%20Size%3A%20%5B%5D%20Quantity%3A%201.">WhatsApp</a>
+              <a class="action whatsapp" target="_blank" rel="noopener" href="https://wa.me/254769551694?text=Hi%20MK7%2C%20I%20want%20Zara%20Black%20Dress%20(%20KSh%205500%20)%20—%20Size%3A%20%5B%5D%20Quantity%3A%201.">
+                <svg viewBox="0 0 32 32"><path fill="#fff" d="M16 3C9.373 3 4 8.373 4 15c0 2.637.86 5.09 2.48 7.16L4 29l7.09-2.32A12.97 12.97 0 0 0 16 27c6.627 0 12-5.373 12-12S22.627 3 16 3zm0 22c-1.98 0-3.91-.52-5.6-1.51l-.4-.23-4.2 1.37 1.37-4.2-.23-.4A9.97 9.97 0 0 1 6 15c0-5.514 4.486-10 10-10s10 4.486 10 10-4.486 10-10 10zm5.07-7.13c-.28-.14-1.65-.81-1.9-.9-.25-.09-.43-.14-.61.14-.18.28-.7.9-.86 1.08-.16.18-.32.2-.6.07-.28-.14-1.18-.44-2.25-1.4-.83-.74-1.39-1.65-1.55-1.93-.16-.28-.02-.43.12-.57.13-.13.28-.34.42-.51.14-.17.18-.29.28-.48.09-.19.05-.36-.02-.5-.07-.14-.61-1.47-.84-2.01-.22-.54-.45-.47-.61-.48-.16-.01-.36-.01-.56-.01-.19 0-.5.07-.76.36-.26.29-1 1-.97 2.43.03 1.43 1.04 2.81 1.19 3.01.15.2 2.05 3.14 5.01 4.28.7.24 1.25.38 1.68.49.71.18 1.36.15 1.87.09.57-.07 1.65-.67 1.89-1.32.23-.65.23-1.21.16-1.32-.07-.11-.25-.18-.53-.32z"/></svg>
+                WhatsApp
+              </a>
             </div>
           </div>
         </article>
-
-        <!-- Product 2 -->
-        <article class="product" data-name="MK7 Premium Hoodie" data-price="KSh 3,800">
+        <!-- Uniqlo White Tee -->
+        <article class="product" data-name="Uniqlo White Tee" data-price="KSh 1,800">
           <div class="product-media">
-            <img src="https://images.unsplash.com/photo-1544027993-37dbfe43562a?q=80&w=1200&auto=format&fit=crop" alt="Premium hoodie">
-            <span class="product-badge">Hot</span>
+            <img src="https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?q=80&w=1200&auto=format&fit=crop" alt="Uniqlo White Tee on clean background">
+            <span class="product-badge">All sizes available</span>
           </div>
           <div class="product-body">
-            <div class="product-name">MK7 Premium Hoodie</div>
+            <div class="product-name">Uniqlo White Tee</div>
             <div class="product-meta">
-              <span class="price">KSh 3,800</span>
-              <span class="stock">In stock</span>
-            </div>
-            <div class="product-actions">
-              <button class="action order">Order</button>
-              <a class="action view" href="#contact">Ask about colors</a>
-              <a class="action whatsapp" target="_blank" rel="noopener" href="https://wa.me/254769551694?text=Hi%20MK7%2C%20I%20want%20MK7%20Premium%20Hoodie%20(%20KSh%203800%20)%20—%20Color%3A%20%5B%5D%20Size%3A%20%5B%5D%20Quantity%3A%201.">WhatsApp</a>
-            </div>
-          </div>
-        </article>
-
-        <!-- Product 3 -->
-        <article class="product" data-name="MK7 Everyday Tee" data-price="KSh 1,200">
-          <div class="product-media">
-            <img src="https://images.unsplash.com/photo-1519744792095-2f2205e87f8f?q=80&w=1200&auto=format&fit=crop" alt="Everyday tee">
-            <span class="product-badge">Deal</span>
-          </div>
-          <div class="product-body">
-            <div class="product-name">MK7 Everyday Tee</div>
-            <div class="product-meta">
-              <span class="price">KSh 1,200</span>
+              <span class="price">KSh 1,800</span>
               <span class="stock">In stock</span>
             </div>
             <div class="product-actions">
               <button class="action order">Order</button>
               <a class="action view" href="#contact">Ask about sizes</a>
-              <a class="action whatsapp" target="_blank" rel="noopener" href="https://wa.me/254769551694?text=Hi%20MK7%2C%20I%20want%20MK7%20Everyday%20Tee%20(%20KSh%201200%20)%20—%20Size%3A%20%5B%5D%20Quantity%3A%201.">WhatsApp</a>
-            </div>
-          </div>
-        </article>
-
-        <!-- Product 4 -->
-        <article class="product" data-name="MK7 Luxe Dress" data-price="KSh 4,900">
-          <div class="product-media">
-            <img src="https://images.unsplash.com/photo-1520975922206-27ad175460e2?q=80&w=1200&auto=format&fit=crop" alt="Luxe dress">
-            <span class="product-badge">Premium</span>
-          </div>
-          <div class="product-body">
-            <div class="product-name">MK7 Luxe Dress</div>
-            <div class="product-meta">
-              <span class="price">KSh 4,900</span>
-              <span class="stock">In stock</span>
-            </div>
-            <div class="product-actions">
-              <button class="action order">Order</button>
-              <a class="action view" href="#contact">Ask about colors</a>
-              <a class="action whatsapp" target="_blank" rel="noopener" href="https://wa.me/254769551694?text=Hi%20MK7%2C%20I%20want%20MK7%20Luxe%20Dress%20(%20KSh%204900%20)%20—%20Color%3A%20%5B%5D%20Size%3A%20%5B%5D%20Quantity%3A%201.">WhatsApp</a>
+              <a class="action whatsapp" target="_blank" rel="noopener" href="https://wa.me/254769551694?text=Hi%20MK7%2C%20I%20want%20Uniqlo%20White%20Tee%20(%20KSh%201800%20)%20—%20Size%3A%20%5B%5D%20Quantity%3A%201.">
+                <svg viewBox="0 0 32 32"><path fill="#fff" d="M16 3C9.373 3 4 8.373 4 15c0 2.637.86 5.09 2.48 7.16L4 29l7.09-2.32A12.97 12.97 0 0 0 16 27c6.627 0 12-5.373 12-12S22.627 3 16 3zm0 22c-1.98 0-3.91-.52-5.6-1.51l-.4-.23-4.2 1.37 1.37-4.2-.23-.4A9.97 9.97 0 0 1 6 15c0-5.514 4.486-10 10-10s10 4.486 10 10-4.486 10-10 10zm5.07-7.13c-.28-.14-1.65-.81-1.9-.9-.25-.09-.43-.14-.61.14-.18.28-.7.9-.86 1.08-.16.18-.32.2-.6.07-.28-.14-1.18-.44-2.25-1.4-.83-.74-1.39-1.65-1.55-1.93-.16-.28-.02-.43.12-.57.13-.13.28-.34.42-.51.14-.17.18-.29.28-.48.09-.19.05-.36-.02-.5-.07-.14-.61-1.47-.84-2.01-.22-.54-.45-.47-.61-.48-.16-.01-.36-.01-.56-.01-.19 0-.5.07-.76.36-.26.29-1 1-.97 2.43.03 1.43 1.04 2.81 1.19 3.01.15.2 2.05 3.14 5.01 4.28.7.24 1.25.38 1.68.49.71.18 1.36.15 1.87.09.57-.07 1.65-.67 1.89-1.32.23-.65.23-1.21.16-1.32-.07-.11-.25-.18-.53-.32z"/></svg>
+                WhatsApp
+              </a>
             </div>
           </div>
         </article>
@@ -388,7 +436,7 @@
     </div>
   </div>
 
-  <script>
+n  <script>
     // Mobile nav toggle
     const toggle = document.querySelector('.menu-toggle');
     const links = document.querySelector('.nav-links');
