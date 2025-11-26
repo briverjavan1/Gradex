@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>MK7 PREMIUM OUTFITS — Shoes & Clothes</title>
-  <meta name="description" content="MK7 PREMIUM OUTFITS: Vibrant, simple, and catchy fashion—premium shoes and clothes. Order via WhatsApp or call." />
+  <meta name="description" content="MK7 PREMIUM OUTFITS: Vibrant, simple, and catchy fashion—premium shoes and clothing. Fast ordering via WhatsApp or call in Kenya." />
   <link rel="preconnect" href="https://fonts.gstatic.com" />
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
   <style>
@@ -12,19 +12,18 @@
       --gold: #fbbf24;
       --blue: #1e3a8a;
       --blue-deep: #0b102d;
-      --text: #111827;
-      --muted: #6b7280;
       --white: #ffffff;
-      --card: #0f172a;
-      --border: #1f2937;
+      --text: #e5e7eb;
+      --muted: #cbd5e1;
+      --card: #0e162f;
+      --border: #223;
       --accent: #22c55e;
-      --danger: #ef4444;
     }
     * { box-sizing: border-box; }
     html, body { margin: 0; padding: 0; }
     body {
       font-family: Poppins, system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
-      color: var(--white);
+      color: var(--text);
       background:
         radial-gradient(1200px 600px at 80% -10%, rgba(30,58,138,0.50), transparent 60%),
         linear-gradient(180deg, var(--blue-deep), #0c1537 60%, #0a183f);
@@ -52,8 +51,8 @@
     /* Hero */
     .hero { padding: 60px 0 40px; }
     .hero-grid { display: grid; grid-template-columns: 1.05fr 0.95fr; gap: 24px; align-items: center; }
-    .hero h1 { font-size: 42px; line-height: 1.15; margin: 0 0 12px; }
-    .hero p { color: #cbd5e1; margin: 0 0 22px; }
+    .hero h1 { font-size: 42px; line-height: 1.15; margin: 0 0 12px; color: var(--white); }
+    .hero p { color: var(--muted); margin: 0 0 22px; }
     .cta-row { display: flex; gap: 12px; flex-wrap: wrap; }
     .btn {
       display: inline-flex; align-items: center; gap: 8px; border: none; cursor: pointer;
@@ -61,23 +60,7 @@
     }
     .btn.primary { background: var(--gold); color: #111827; }
     .btn.primary:hover { filter: brightness(1.05); }
-    .btn.whatsapp {
-      background: #25D366;
-      color: #fff;
-      padding: 8px 12px;
-      font-size: 15px;
-      border-radius: 10px;
-      display: inline-flex;
-      align-items: center;
-      gap: 6px;
-      border: none;
-    }
-    .btn.whatsapp svg {
-      width: 18px;
-      height: 18px;
-      vertical-align: middle;
-      margin-right: 2px;
-    }
+    .btn.whatsapp { background: var(--accent); color: #062f1b; }
     .btn.outline { background: transparent; color: var(--gold); border: 1px solid var(--gold); }
     .hero-card {
       background: linear-gradient(180deg, #121a3e, #0f1735);
@@ -91,12 +74,12 @@
 
     /* Sections */
     .section { padding: 54px 0; }
-    .section h2 { margin: 0 0 12px; font-size: 28px; }
-    .section p { color: #cbd5e1; }
+    .section h2 { margin: 0 0 12px; font-size: 28px; color: var(--white); }
+    .section p { color: var(--muted); }
 
     /* Products */
     .products-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; }
-    .product { background: #0e162f; border: 1px solid #223; border-radius: 16px; overflow: hidden; display: flex; flex-direction: column; }
+    .product { background: var(--card); border: 1px solid var(--border); border-radius: 16px; overflow: hidden; display: flex; flex-direction: column; }
     .product-media { position: relative; }
     .product-media img { width: 100%; aspect-ratio: 4/3; object-fit: cover; display: block; }
     .product-badge {
@@ -118,27 +101,27 @@
 
     /* About / Contact */
     .info-grid { display: grid; grid-template-columns: 1.2fr 0.8fr; gap: 18px; }
-    .card { background: #0e162f; border: 1px solid #223; border-radius: 16px; padding: 16px; }
+    .card { background: var(--card); border: 1px solid var(--border); border-radius: 16px; padding: 16px; }
     .contact-list { list-style: none; margin: 0; padding: 0; display: grid; gap: 10px; }
-    .contact-item { display: flex; align-items: center; gap: 8px; color: #cbd5e1; }
+    .contact-item { display: flex; align-items: center; gap: 8px; color: var(--muted); }
     .contact-actions { display: flex; gap: 10px; margin-top: 10px; }
 
     /* Footer */
-    .site-footer { padding: 24px 0; border-top: 1px solid #223; margin-top: 24px; }
+    .site-footer { padding: 24px 0; border-top: 1px solid var(--border); margin-top: 24px; }
     .footer-grid { display: flex; align-items: center; justify-content: space-between; gap: 16px; }
     .social { display: flex; gap: 12px; list-style: none; margin: 0; padding: 0; }
-    .social a { color: #cbd5e1; }
+    .social a { color: var(--muted); }
     .social a:hover { color: var(--white); }
 
     /* Modal */
     .modal-backdrop { position: fixed; inset: 0; background: rgba(0,0,0,0.6); display: none; align-items: center; justify-content: center; z-index: 100; }
-    .modal { width: min(640px, 92vw); background: #0e162f; border: 1px solid #223; border-radius: 16px; overflow: hidden; }
-    .modal-head { padding: 14px 16px; border-bottom: 1px solid #223; display: flex; align-items: center; justify-content: space-between; }
+    .modal { width: min(640px, 92vw); background: var(--card); border: 1px solid var(--border); border-radius: 16px; overflow: hidden; }
+    .modal-head { padding: 14px 16px; border-bottom: 1px solid var(--border); display: flex; align-items: center; justify-content: space-between; }
     .modal-title { font-weight: 800; color: var(--gold); }
     .modal-body { padding: 16px; display: grid; gap: 12px; }
     .close-btn { background: transparent; border: 1px solid #334155; color: #e5e7eb; padding: 8px 10px; border-radius: 10px; cursor: pointer; }
 
-    label { display: grid; gap: 6px; color: #cbd5e1; font-weight: 600; }
+    label { display: grid; gap: 6px; color: var(--muted); font-weight: 600; }
     input, select, textarea {
       width: 100%; padding: 12px; border-radius: 10px; background: #0b1220;
       border: 1px solid #334155; color: #e5e7eb;
@@ -150,9 +133,8 @@
     /* Floating WhatsApp */
     .floating-wa {
       position: fixed; right: 18px; bottom: 18px; z-index: 90;
-      display: inline-flex; align-items: center; gap: 8px; background: #25D366; color: #fff;
-      padding: 8px 12px; border-radius: 12px; font-size: 15px;
-      box-shadow: 0 10px 30px rgba(34,197,94,0.35);
+      display: inline-flex; align-items: center; gap: 8px; background: var(--accent); color: #062f1b;
+      padding: 12px 16px; border-radius: 16px; font-weight: 800; box-shadow: 0 10px 30px rgba(34,197,94,0.35);
     }
 
     /* SVG logo sizing */
@@ -200,6 +182,7 @@
           <li><a href="#products">Products</a></li>
           <li><a href="#about">About</a></li>
           <li><a href="#contact">Contact</a></li>
+          <li><a href="#terms">Terms</a></li>
         </ul>
         <a class="nav-cta" href="https://wa.me/254769551694" target="_blank" rel="noopener">Order via WhatsApp</a>
       </nav>
@@ -213,7 +196,7 @@
         <div>
           <span class="badge">Vibrant • Simple • Catchy</span>
           <h1>Step into style with MK7 PREMIUM OUTFITS</h1>
-          <p>Premium sneakers, dresses, tees, and more — curated for bold, everyday confidence. Fast ordering via WhatsApp or call.</p>
+          <p>Premium sneakers, boots, and dress shoes — curated for the Kenyan market. Fast ordering via WhatsApp or call.</p>
           <div class="cta-row">
             <a class="btn primary" href="#products">Shop now</a>
             <a class="btn whatsapp" href="https://wa.me/254769551694" target="_blank" rel="noopener">WhatsApp us</a>
@@ -221,7 +204,8 @@
           </div>
         </div>
         <div class="hero-card">
-          <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?q=80&w=1200&auto=format&fit=crop" alt="Stylish sneakers on vibrant background">
+          <!-- Use one of your hero shoes -->
+          <img src="images/JFGzuQnxnUzmKBo1p9QPS.jpeg" alt="Vibrant Timberland boots" />
         </div>
       </div>
     </div>
@@ -231,273 +215,75 @@
   <section id="products" class="section">
     <div class="container">
       <h2>Featured products</h2>
-      <p>Tap Order to place an instant WhatsApp order. We’ll confirm availability and delivery in Juja, Kiambu and beyond.</p>
+      <p>Tap Order to place an instant WhatsApp order. We deliver in Juja, Kiambu and across Kenya.</p>
       <div class="products-grid">
-        <!-- Nike Air Force 1 -->
-        <article class="product" data-name="Nike Air Force 1" data-price="KSh 8,500">
+
+        <!-- Timberland Boots Grey -->
+        <article class="product" data-name="Timberland Rugged Boot — Grey" data-price="KSh 14,500">
           <div class="product-media">
-            <img src="https://images.unsplash.com/photo-1517263904808-5dc0d6a3b4e6?q=80&w=1200&auto=format&fit=crop" alt="Nike Air Force 1">
-            <span class="product-badge">All sizes available</span>
+            <img src="images/dqDgc9Q9Nu3LBZRTCYjF7.jpeg" alt="Grey Timberland rugged boots" />
+            <span class="product-badge">Premium</span>
           </div>
           <div class="product-body">
-            <div class="product-name">Nike Air Force 1</div>
+            <div class="product-name">Timberland Rugged Boot — Grey</div>
             <div class="product-meta">
-              <span class="price">KSh 8,500</span>
+              <span class="price">KSh 14,500</span>
               <span class="stock">In stock</span>
             </div>
             <div class="product-actions">
               <button class="action order">Order</button>
-              <a class="action view" href="#contact">Ask about sizes</a>
-              <a class="action whatsapp" target="_blank" rel="noopener" href="https://wa.me/254769551694?text=Hi%20MK7%2C%20I%20want%20Nike%20Air%20Force%201%20(%20KSh%208500%20)%20—%20Size%3A%20%5B%5D%20Quantity%3A%201.">
-                <svg viewBox="0 0 32 32"><path fill="#fff" d="M16 3C9.373 3 4 8.373 4 15c0 2.637.86 5.09 2.48 7.16L4 29l7.09-2.32A12.97 12.97 0 0 0 16 27c6.627 0 12-5.373 12-12S22.627 3 16 3zm0 22c-1.98 0-3.91-.52-5.6-1.51l-.4-.23-4.2 1.37 1.37-4.2-.23-.4A9.97 9.97 0 0 1 6 15c0-5.514 4.486-10 10-10s10 4.486 10 10-4.486 10-10 10zm5.07-7.13c-.28-.14-1.65-.81-1.9-.9-.25-.09-.43-.14-.61.14-.18.28-.7.9-.86 1.08-.16.18-.32.2-.6.07-.28-.14-1.18-.44-2.25-1.4-.83-.74-1.39-1.65-1.55-1.93-.16-.28-.02-.43.12-.57.13-.13.28-.34.42-.51.14-.17.18-.29.28-.48.09-.19.05-.36-.02-.5-.07-.14-.61-1.47-.84-2.01-.22-.54-.45-.47-.61-.48-.16-.01-.36-.01-.56-.01-.19 0-.5.07-.76.36-.26.29-1 1-.97 2.43.03 1.43 1.04 2.81 1.19 3.01.15.2 2.05 3.14 5.01 4.28.7.24 1.25.38 1.68.49.71.18 1.36.15 1.87.09.57-.07 1.65-.67 1.89-1.32.23-.65.23-1.21.16-1.32-.07-.11-.25-.18-.53-.32z"/></svg>
-                WhatsApp
-              </a>
+              <a class="action view" href="#details-grey-timberland">Details</a>
+              <a class="action whatsapp" target="_blank" rel="noopener"
+                 href="https://wa.me/254769551694?text=Hi%20MK7%2C%20I%20want%20Timberland%20Rugged%20Boot%20%E2%80%94%20Grey%20(KSh%2014%2C500)%20Size%3A%20%5B%5D%20Qty%3A%201.">WhatsApp</a>
             </div>
           </div>
         </article>
-        <!-- Adidas Superstar -->
-        <article class="product" data-name="Adidas Superstar" data-price="KSh 7,200">
+
+        <!-- Timberland Boots Orange -->
+        <article class="product" data-name="Timberland Icon Boot — Orange/White" data-price="KSh 15,500">
           <div class="product-media">
-            <img src="https://images.unsplash.com/photo-1465101046530-73398c7f28ca?q=80&w=1200&auto=format&fit=crop" alt="Adidas Superstar">
-            <span class="product-badge">All sizes available</span>
+            <img src="images/JFGzuQnxnUzmKBo1p9QPS.jpeg" alt="Orange Timberland boots" />
+            <span class="product-badge">New</span>
           </div>
           <div class="product-body">
-            <div class="product-name">Adidas Superstar</div>
+            <div class="product-name">Timberland Icon Boot — Orange/White</div>
             <div class="product-meta">
-              <span class="price">KSh 7,200</span>
+              <span class="price">KSh 15,500</span>
               <span class="stock">In stock</span>
             </div>
             <div class="product-actions">
               <button class="action order">Order</button>
-              <a class="action view" href="#contact">Ask about sizes</a>
-              <a class="action whatsapp" target="_blank" rel="noopener" href="https://wa.me/254769551694?text=Hi%20MK7%2C%20I%20want%20Adidas%20Superstar%20(%20KSh%207200%20)%20—%20Size%3A%20%5B%5D%20Quantity%3A%201.">
-                <svg viewBox="0 0 32 32"><path fill="#fff" d="M16 3C9.373 3 4 8.373 4 15c0 2.637.86 5.09 2.48 7.16L4 29l7.09-2.32A12.97 12.97 0 0 0 16 27c6.627 0 12-5.373 12-12S22.627 3 16 3zm0 22c-1.98 0-3.91-.52-5.6-1.51l-.4-.23-4.2 1.37 1.37-4.2-.23-.4A9.97 9.97 0 0 1 6 15c0-5.514 4.486-10 10-10s10 4.486 10 10-4.486 10-10 10zm5.07-7.13c-.28-.14-1.65-.81-1.9-.9-.25-.09-.43-.14-.61.14-.18.28-.7.9-.86 1.08-.16.18-.32.2-.6.07-.28-.14-1.18-.44-2.25-1.4-.83-.74-1.39-1.65-1.55-1.93-.16-.28-.02-.43.12-.57.13-.13.28-.34.42-.51.14-.17.18-.29.28-.48.09-.19.05-.36-.02-.5-.07-.14-.61-1.47-.84-2.01-.22-.54-.45-.47-.61-.48-.16-.01-.36-.01-.56-.01-.19 0-.5.07-.76.36-.26.29-1 1-.97 2.43.03 1.43 1.04 2.81 1.19 3.01.15.2 2.05 3.14 5.01 4.28.7.24 1.25.38 1.68.49.71.18 1.36.15 1.87.09.57-.07 1.65-.67 1.89-1.32.23-.65.23-1.21.16-1.32-.07-.11-.25-.18-.53-.32z"/></svg>
-                WhatsApp
-              </a>
+              <a class="action view" href="#details-orange-timberland">Details</a>
+              <a class="action whatsapp" target="_blank" rel="noopener"
+                 href="https://wa.me/254769551694?text=Hi%20MK7%2C%20I%20want%20Timberland%20Icon%20Boot%20%E2%80%94%20Orange%2FWhite%20(KSh%2015%2C500)%20Size%3A%20%5B%5D%20Qty%3A%201.">WhatsApp</a>
             </div>
           </div>
         </article>
-        <!-- Converse Chuck Taylor -->
-        <article class="product" data-name="Converse Chuck Taylor" data-price="KSh 6,000">
+
+        <!-- Black Formal Oxford (Perforated) -->
+        <article class="product" data-name="Empire Oxford — Black Perforated" data-price="KSh 5,800">
           <div class="product-media">
-            <img src="https://images.unsplash.com/photo-1519864600265-abb23847ef2c?q=80&w=1200&auto=format&fit=crop" alt="Converse Chuck Taylor">
-            <span class="product-badge">All sizes available</span>
+            <img src="images/frHgDejUgm6Z8ytSzbTc9.jpeg" alt="Black formal oxford perforated" />
+            <span class="product-badge">Classic</span>
           </div>
           <div class="product-body">
-            <div class="product-name">Converse Chuck Taylor</div>
+            <div class="product-name">Empire Oxford — Black Perforated</div>
             <div class="product-meta">
-              <span class="price">KSh 6,000</span>
+              <span class="price">KSh 5,800</span>
               <span class="stock">In stock</span>
             </div>
             <div class="product-actions">
               <button class="action order">Order</button>
-              <a class="action view" href="#contact">Ask about sizes</a>
-              <a class="action whatsapp" target="_blank" rel="noopener" href="https://wa.me/254769551694?text=Hi%20MK7%2C%20I%20want%20Converse%20Chuck%20Taylor%20(%20KSh%206000%20)%20—%20Size%3A%20%5B%5D%20Quantity%3A%201.">
-                <svg viewBox="0 0 32 32"><path fill="#fff" d="M16 3C9.373 3 4 8.373 4 15c0 2.637.86 5.09 2.48 7.16L4 29l7.09-2.32A12.97 12.97 0 0 0 16 27c6.627 0 12-5.373 12-12S22.627 3 16 3zm0 22c-1.98 0-3.91-.52-5.6-1.51l-.4-.23-4.2 1.37 1.37-4.2-.23-.4A9.97 9.97 0 0 1 6 15c0-5.514 4.486-10 10-10s10 4.486 10 10-4.486 10-10 10zm5.07-7.13c-.28-.14-1.65-.81-1.9-.9-.25-.09-.43-.14-.61.14-.18.28-.7.9-.86 1.08-.16.18-.32.2-.6.07-.28-.14-1.18-.44-2.25-1.4-.83-.74-1.39-1.65-1.55-1.93-.16-.28-.02-.43.12-.57.13-.13.28-.34.42-.51.14-.17.18-.29.28-.48.09-.19.05-.36-.02-.5-.07-.14-.61-1.47-.84-2.01-.22-.54-.45-.47-.61-.48-.16-.01-.36-.01-.56-.01-.19 0-.5.07-.76.36-.26.29-1 1-.97 2.43.03 1.43 1.04 2.81 1.19 3.01.15.2 2.05 3.14 5.01 4.28.7.24 1.25.38 1.68.49.71.18 1.36.15 1.87.09.57-.07 1.65-.67 1.89-1.32.23-.65.23-1.21.16-1.32-.07-.11-.25-.18-.53-.32z"/></svg>
-                WhatsApp
-              </a>
+              <a class="action view" href="#details-empire-oxford">Details</a>
+              <a class="action whatsapp" target="_blank" rel="noopener"
+                 href="https://wa.me/254769551694?text=Hi%20MK7%2C%20I%20want%20Empire%20Oxford%20%E2%80%94%20Black%20Perforated%20(KSh%205%2C800)%20Size%3A%20%5B%5D%20Qty%3A%201.">WhatsApp</a>
             </div>
           </div>
         </article>
-        <!-- Zara Black Dress -->
-        <article class="product" data-name="Zara Black Dress" data-price="KSh 5,500">
+
+        <!-- Brown Tassel Loafer (Gold Hardware) -->
+        <article class="product" data-name="Premium Tassel Loafer — Brown" data-price="KSh 6,200">
           <div class="product-media">
-            <img src="https://images.unsplash.com/photo-1512436991641-6745cdb1723f?q=80&w=1200&auto=format&fit=crop" alt="Zara Black Dress on black model">
-            <span class="product-badge">All sizes available</span>
+            <img src="images/LZHfYjzYr1VSXKaX2T9Tj.jpeg" alt="Brown tassel loafer with gold hardware" />
+            <span class="product-badge">Hot</span>
           </div>
-          <div class="product-body">
-            <div class="product-name">Zara Black Dress</div>
-            <div class="product-meta">
-              <span class="price">KSh 5,500</span>
-              <span class="stock">In stock</span>
-            </div>
-            <div class="product-actions">
-              <button class="action order">Order</button>
-              <a class="action view" href="#contact">Ask about sizes</a>
-              <a class="action whatsapp" target="_blank" rel="noopener" href="https://wa.me/254769551694?text=Hi%20MK7%2C%20I%20want%20Zara%20Black%20Dress%20(%20KSh%205500%20)%20—%20Size%3A%20%5B%5D%20Quantity%3A%201.">
-                <svg viewBox="0 0 32 32"><path fill="#fff" d="M16 3C9.373 3 4 8.373 4 15c0 2.637.86 5.09 2.48 7.16L4 29l7.09-2.32A12.97 12.97 0 0 0 16 27c6.627 0 12-5.373 12-12S22.627 3 16 3zm0 22c-1.98 0-3.91-.52-5.6-1.51l-.4-.23-4.2 1.37 1.37-4.2-.23-.4A9.97 9.97 0 0 1 6 15c0-5.514 4.486-10 10-10s10 4.486 10 10-4.486 10-10 10zm5.07-7.13c-.28-.14-1.65-.81-1.9-.9-.25-.09-.43-.14-.61.14-.18.28-.7.9-.86 1.08-.16.18-.32.2-.6.07-.28-.14-1.18-.44-2.25-1.4-.83-.74-1.39-1.65-1.55-1.93-.16-.28-.02-.43.12-.57.13-.13.28-.34.42-.51.14-.17.18-.29.28-.48.09-.19.05-.36-.02-.5-.07-.14-.61-1.47-.84-2.01-.22-.54-.45-.47-.61-.48-.16-.01-.36-.01-.56-.01-.19 0-.5.07-.76.36-.26.29-1 1-.97 2.43.03 1.43 1.04 2.81 1.19 3.01.15.2 2.05 3.14 5.01 4.28.7.24 1.25.38 1.68.49.71.18 1.36.15 1.87.09.57-.07 1.65-.67 1.89-1.32.23-.65.23-1.21.16-1.32-.07-.11-.25-.18-.53-.32z"/></svg>
-                WhatsApp
-              </a>
-            </div>
-          </div>
-        </article>
-        <!-- Uniqlo White Tee -->
-        <article class="product" data-name="Uniqlo White Tee" data-price="KSh 1,800">
-          <div class="product-media">
-            <img src="https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?q=80&w=1200&auto=format&fit=crop" alt="Uniqlo White Tee on clean background">
-            <span class="product-badge">All sizes available</span>
-          </div>
-          <div class="product-body">
-            <div class="product-name">Uniqlo White Tee</div>
-            <div class="product-meta">
-              <span class="price">KSh 1,800</span>
-              <span class="stock">In stock</span>
-            </div>
-            <div class="product-actions">
-              <button class="action order">Order</button>
-              <a class="action view" href="#contact">Ask about sizes</a>
-              <a class="action whatsapp" target="_blank" rel="noopener" href="https://wa.me/254769551694?text=Hi%20MK7%2C%20I%20want%20Uniqlo%20White%20Tee%20(%20KSh%201800%20)%20—%20Size%3A%20%5B%5D%20Quantity%3A%201.">
-                <svg viewBox="0 0 32 32"><path fill="#fff" d="M16 3C9.373 3 4 8.373 4 15c0 2.637.86 5.09 2.48 7.16L4 29l7.09-2.32A12.97 12.97 0 0 0 16 27c6.627 0 12-5.373 12-12S22.627 3 16 3zm0 22c-1.98 0-3.91-.52-5.6-1.51l-.4-.23-4.2 1.37 1.37-4.2-.23-.4A9.97 9.97 0 0 1 6 15c0-5.514 4.486-10 10-10s10 4.486 10 10-4.486 10-10 10zm5.07-7.13c-.28-.14-1.65-.81-1.9-.9-.25-.09-.43-.14-.61.14-.18.28-.7.9-.86 1.08-.16.18-.32.2-.6.07-.28-.14-1.18-.44-2.25-1.4-.83-.74-1.39-1.65-1.55-1.93-.16-.28-.02-.43.12-.57.13-.13.28-.34.42-.51.14-.17.18-.29.28-.48.09-.19.05-.36-.02-.5-.07-.14-.61-1.47-.84-2.01-.22-.54-.45-.47-.61-.48-.16-.01-.36-.01-.56-.01-.19 0-.5.07-.76.36-.26.29-1 1-.97 2.43.03 1.43 1.04 2.81 1.19 3.01.15.2 2.05 3.14 5.01 4.28.7.24 1.25.38 1.68.49.71.18 1.36.15 1.87.09.57-.07 1.65-.67 1.89-1.32.23-.65.23-1.21.16-1.32-.07-.11-.25-.18-.53-.32z"/></svg>
-                WhatsApp
-              </a>
-            </div>
-          </div>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <!-- About & Contact -->
-  <section id="about" class="section">
-    <div class="container">
-      <div class="info-grid">
-        <div class="card">
-          <h2>About MK7 PREMIUM OUTFITS</h2>
-          <p>We keep fashion vibrant, simple, and catchy. From premium sneakers to everyday essentials,
-            we curate quality pieces at great prices. Based in Juja, Kiambu — delivering across Kenya.</p>
-          <p class="hint">Need a custom look or bulk order? Chat us on WhatsApp and we’ll sort you out fast.</p>
-        </div>
-        <div id="contact" class="card">
-          <h2>Contact</h2>
-          <ul class="contact-list">
-            <li class="contact-item">WhatsApp: <a href="https://wa.me/254769551694" target="_blank" rel="noopener">+254 769 551 694</a></li>
-            <li class="contact-item">Call: <a href="tel:+254769551694">+254 769 551 694</a></li>
-            <li class="contact-item">Location: Juja, Kiambu, Kenya</li>
-          </ul>
-          <div class="contact-actions">
-            <a class="btn whatsapp" href="https://wa.me/254769551694" target="_blank" rel="noopener">WhatsApp now</a>
-            <a class="btn outline" href="tel:+254769551694">Call us</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer class="site-footer">
-    <div class="container footer-grid">
-      <div>
-        <span>© <span id="year"></span> MK7 PREMIUM OUTFITS</span>
-        <span style="color:#93c5fd; margin-left:8px;">The best web designer from Google built this vibe.</span>
-      </div>
-      <ul class="social">
-        <li><a href="#products">Shop</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </div>
-  </footer>
-
-  <!-- Floating WhatsApp -->
-  <a class="floating-wa" href="https://wa.me/254769551694" target="_blank" rel="noopener">Chat on WhatsApp</a>
-
-  <!-- Order Modal -->
-  <div class="modal-backdrop" id="orderModal">
-    <div class="modal" role="dialog" aria-modal="true" aria-labelledby="orderTitle">
-      <div class="modal-head">
-        <div class="modal-title" id="orderTitle">Place your order</div>
-        <button class="close-btn" id="closeModal">Close</button>
-      </div>
-      <div class="modal-body">
-        <form id="orderForm">
-          <label>Product
-            <input type="text" name="product" id="productInput" readonly>
-          </label>
-          <div class="form-row">
-            <label>Size
-              <select name="size" id="sizeInput" required>
-                <option value="">Select…</option>
-                <option>S</option><option>M</option><option>L</option><option>XL</option><option>XXL</option>
-                <option>36</option><option>38</option><option>40</option><option>42</option><option>44</option>
-              </select>
-            </label>
-            <label>Quantity
-              <input type="number" name="qty" id="qtyInput" min="1" value="1" required>
-            </label>
-          </div>
-          <div class="form-row">
-            <label>Your name
-              <input type="text" name="name" id="nameInput" placeholder="Your full name" required>
-            </label>
-            <label>Phone
-              <input type="tel" name="phone" id="phoneInput" placeholder="+2547..." required>
-            </label>
-          </div>
-          <label>Notes (optional)
-            <textarea name="notes" id="notesInput" rows="3" placeholder="Color preference, delivery location…"></textarea>
-          </label>
-          <div class="form-actions">
-            <button type="submit" class="btn primary">Send on WhatsApp</button>
-            <button type="button" class="btn outline" id="callButton">Call to confirm</button>
-          </div>
-          <p class="hint">Submitting opens WhatsApp with a pre-filled message to +254 769 551 694.</p>
-        </form>
-      </div>
-    </div>
-  </div>
-
-n  <script>
-    // Mobile nav toggle
-    const toggle = document.querySelector('.menu-toggle');
-    const links = document.querySelector('.nav-links');
-    if (toggle && links) {
-      toggle.addEventListener('click', () => {
-        const open = links.style.display === 'block';
-        links.style.display = open ? 'none' : 'block';
-      });
-    }
-
-    // Year in footer
-    document.getElementById('year').textContent = new Date().getFullYear();
-
-    // Open order modal with product data
-    const modal = document.getElementById('orderModal');
-    const closeModal = document.getElementById('closeModal');
-    const productInput = document.getElementById('productInput');
-    const orderButtons = document.querySelectorAll('.action.order');
-
-    orderButtons.forEach(btn => {
-      btn.addEventListener('click', (e) => {
-        const card = e.target.closest('.product');
-        const productName = card?.dataset?.name || 'MK7 Product';
-        productInput.value = productName;
-        modal.style.display = 'flex';
-      });
-    });
-
-    closeModal.addEventListener('click', () => { modal.style.display = 'none'; });
-    modal.addEventListener('click', (e) => {
-      if (e.target === modal) modal.style.display = 'none';
-    });
-
-    // Order form -> WhatsApp
-    const form = document.getElementById('orderForm');
-    form.addEventListener('submit', (e) => {
-      e.preventDefault();
-      const product = document.getElementById('productInput').value.trim();
-      const size = document.getElementById('sizeInput').value.trim();
-      const qty = document.getElementById('qtyInput').value.trim();
-      const name = document.getElementById('nameInput').value.trim();
-      const phone = document.getElementById('phoneInput').value.trim();
-      const notes = document.getElementById('notesInput').value.trim();
-
-      const message = `Hi MK7 PREMIUM OUTFITS,%0A%0A`
-        + `I want to order:%0A- Product: ${encodeURIComponent(product)}%0A`
-        + `- Size: ${encodeURIComponent(size)}%0A`
-        + `- Quantity: ${encodeURIComponent(qty)}%0A%0A`
-        + `My details:%0A- Name: ${encodeURIComponent(name)}%0A`
-        + `- Phone: ${encodeURIComponent(phone)}%0A`
-        + (notes ? `%0ANotes:%0A${encodeURIComponent(notes)}` : '');
-
-      const waUrl = `https://wa.me/254769551694?text=${message}`;
-      window.open(waUrl, '_blank');
-    });
-
-    // Call button from modal
-    const callButton = document.getElementById('callButton');
-    callButton.addEventListener('click', () => {
-      window.location.href = 'tel:+254769551694';
-    });
-  </script>
-</body>
-</html>
